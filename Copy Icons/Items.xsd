@@ -1,0 +1,78 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Item" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="ID"/>
+              <xs:element type="xs:string" name="Name"/>
+              <xs:element type="xs:string" name="Type"/>
+              <xs:element type="xs:string" name="Slot"/>
+              <xs:element type="xs:int" name="Sheath"/>
+              <xs:element type="xs:int" name="Quality"/>
+              <xs:element type="xs:string" name="Icon"/>
+			  <xs:element name="Male">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Hair"/>
+                    <xs:element type="xs:string" name="Beards"/>
+                    <xs:element type="xs:string" name="Piercing"/>
+                    <xs:element type="xs:string" name="Other"/>
+                    <xs:element type="xs:string" name="Ears"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+			  <xs:element name="Female">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Hair"/>
+                    <xs:element type="xs:string" name="Beards"/>
+                    <xs:element type="xs:string" name="Piercing"/>
+                    <xs:element type="xs:string" name="Other"/>
+                    <xs:element type="xs:string" name="Ears"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Models">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Left"/>
+                    <xs:element type="xs:string" name="Right"/>
+                    <xs:element type="xs:string" name="Cape"/>
+                    <xs:element type="xs:string" name="Sleeve"/>
+                    <xs:element type="xs:string" name="Wrist"/>
+                    <xs:element type="xs:string" name="Doublet"/>
+                    <xs:element type="xs:string" name="Skirt"/>
+                    <xs:element type="xs:string" name="Robe"/>
+                    <xs:element type="xs:string" name="Knees"/>
+                    <xs:element type="xs:string" name="Boots"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Textures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Left"/>
+                    <xs:element type="xs:string" name="Right"/>
+                    <xs:element type="xs:string" name="ArmUpper"/>
+                    <xs:element type="xs:string" name="ArmLower"/>
+                    <xs:element type="xs:string" name="Hand"/>
+                    <xs:element type="xs:string" name="TorsoUpper"/>
+                    <xs:element type="xs:string" name="TorsoLower"/>
+                    <xs:element type="xs:string" name="LegUpper"/>
+                    <xs:element type="xs:string" name="LegLower"/>
+                    <xs:element type="xs:string" name="Foot"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:int" name="AllowableClass"/>
+              <xs:element type="xs:int" name="AllowableRace"/>
+              <xs:element type="xs:int" name="MaxCount"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
